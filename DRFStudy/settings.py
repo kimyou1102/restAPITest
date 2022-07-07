@@ -79,25 +79,25 @@ WSGI_APPLICATION = 'DRFStudy.wsgi.application'
 # Database
 # https://docs.djangoproject.com/en/4.0/ref/settings/#databases
 
-# DATABASES = {
-#     'default': {
-#         'ENGINE': 'django.db.backends.sqlite3',
-#         'NAME': BASE_DIR / 'db.sqlite3',
-#     }
-# }
-
 DATABASES = {
     'default': {
-        'ENGINE': 'django.db.backends.postgresql_psycopg2',
-        'NAME': 'd7d1hm9lmh6v7o', #Database
-        'USER': 'bjsniktquoxcjk', #User
-        'PASSWORD': 'b7d3f783d588377ae25eaacba9ab8cf467571c1fbb57e5de81c407f3b0a596e9', #Password
-        'HOST': 'ec2-52-20-166-21.compute-1.amazonaws.com', #Host
-        'PORT': '5432', #Port
+        'ENGINE': 'django.db.backends.sqlite3',
+        'NAME': BASE_DIR / 'db.sqlite3',
     }
 }
-db_from_env = dj_database_url.config(conn_max_age=500)
-DATABASES['default'].update(db_from_env)
+
+# DATABASES = {
+#     'default': {
+#         'ENGINE': 'django.db.backends.postgresql_psycopg2',
+#         'NAME': 'd7d1hm9lmh6v7o', #Database
+#         'USER': 'bjsniktquoxcjk', #User
+#         'PASSWORD': 'b7d3f783d588377ae25eaacba9ab8cf467571c1fbb57e5de81c407f3b0a596e9', #Password
+#         'HOST': 'ec2-52-20-166-21.compute-1.amazonaws.com', #Host
+#         'PORT': '5432', #Port
+#     }
+# }
+# db_from_env = dj_database_url.config(conn_max_age=500)
+# DATABASES['default'].update(db_from_env)
 
 
 # Password validation
