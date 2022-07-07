@@ -1,1 +1,1 @@
-web: gunicorn DRFStudy.wsgi --log-file -
+web: gunicorn DRFStudy.wsgi --pythonpath=config --log-file -
